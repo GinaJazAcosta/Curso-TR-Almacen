@@ -18,7 +18,7 @@ public class ProductoMapper {
                 .build();
     }
 
-    public ProductoResponse productoAResponse(Producto producto){
+    public ProductoResponse entidadAResponse(Producto producto){
         if (producto==null) return null;
         return new ProductoResponse(
           producto.getId(),
