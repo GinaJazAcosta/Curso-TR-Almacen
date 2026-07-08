@@ -21,11 +21,11 @@ public class ProductoMapper {
     public ProductoResponse entidadAResponse(Producto producto){
         if (producto==null) return null;
         return new ProductoResponse(
-          producto.getId(),
-                producto.getNombre(),
-                producto.getCategoria().getDescripcion(),
-                producto.getPrecio(),
-                producto.getCantidad()
+            producto.getId(),
+            producto.getNombre(),
+            producto.getCategoria().getDescripcion(),
+            producto.getPrecio(),
+            producto.getCantidad()
         );
     }
 }
