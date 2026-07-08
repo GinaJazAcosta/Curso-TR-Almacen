@@ -17,8 +17,10 @@ import java.math.BigDecimal;
 @Getter
 @Table(name="PRODUCTOS")
 public class Producto {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "ID_PRODUCTO")
     private Long id;
 
     @Column(name = "NOMBRE", nullable = false, length = 30)
