@@ -51,7 +51,7 @@ public class Producto {
     }
 
     public void descontarCantidad(int cantidad){
-        if(cantidad < 0 || cantidad >= this.cantidad)
+        if(cantidad <= 0 || cantidad > this.cantidad)
             throw new IllegalArgumentException("La cantidad debe ser positiva y menor o igual a la cantidad actual");
         this.cantidad -= cantidad;
     }

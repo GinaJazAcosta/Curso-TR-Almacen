@@ -19,7 +19,7 @@ public interface SucursalRepository extends JpaRepository<Sucursal, Long> {
     //CONSULTA DERIVADA
     Optional<Sucursal> findByNombre(String nombre);
 
-    //CONSULTA JP
+    //CONSULTA JPQL
     @Query("SELECT s FROM Sucursal s WHERE s.nombre = :nombre")
     Optional<Sucursal> buscarPorNombre(@Param("nombre") String nombre);
 
